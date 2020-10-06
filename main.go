@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"os"
+
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
@@ -11,7 +13,6 @@ import (
 	"github.com/melardev/GoGonicEcommerceApi/middlewares"
 	"github.com/melardev/GoGonicEcommerceApi/models"
 	"github.com/melardev/GoGonicEcommerceApi/seeds"
-	"os"
 )
 
 func drop(db *gorm.DB) {
@@ -104,9 +105,11 @@ func main() {
 
 	defer database.Close()
 	args := os.Args
+	fmt.Print(args)
 	if len(args) > 1 {
+		println("here 2")
 		first := args[1]
-		second := ""
+		second := "seed"
 		if len(args) > 2 {
 			second = args[2]
 		}

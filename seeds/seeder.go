@@ -1,13 +1,14 @@
 package seeds
 
 import (
+	"math/rand"
+	"time"
+
 	"github.com/icrowley/fake"
 	"github.com/jinzhu/gorm"
 	"github.com/melardev/GoGonicEcommerceApi/infrastructure"
 	"github.com/melardev/GoGonicEcommerceApi/models"
 	"golang.org/x/crypto/bcrypt"
-	"math/rand"
-	"time"
 )
 
 func randomInt(min, max int) int {
