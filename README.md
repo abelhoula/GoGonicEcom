@@ -1,4 +1,4 @@
-# GoGonicEcommerceApi
+# GoGonicEcom
 # Table of Contents
 - [Introduction](#introduction)
 - [Full-stack Applications](#full-stack-applications)
